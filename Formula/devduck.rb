@@ -3,8 +3,8 @@ class Devduck < Formula
 
   desc "Extreme minimalist self-adapting AI agent"
   homepage "https://github.com/cagataycali/devduck"
-  url "https://files.pythonhosted.org/packages/source/d/devduck/devduck-0.4.0.tar.gz"
-  sha256 "615cb151704760ca026b8c3aa0bbd9a8a87cdd9c0921f19efb4ab0b3f8325dc6"
+  url "https://files.pythonhosted.org/packages/3f/67/93602bf065891c6dde1a2b16bc64027b8d70be34e3918d3d6b070c835557/devduck-0.4.1.tar.gz"
+  sha256 "70d00821af85fa49532422ca8088204a731352b8ad7ae01d819fbb9e5eecb7d4"
   license "MIT"
 
   depends_on "python@3.11"
