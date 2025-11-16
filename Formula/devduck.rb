@@ -10,9 +10,8 @@ class Devduck < Formula
   depends_on "python@3.13"
 
   def install
-    virtualenv_create(libexec, "python3.13")
-    system libexec/"bin/pip", "install", buildpath
-    bin.install_symlink libexec/"bin/devduck"
+    venv = virtualenv_create(libexec, "python3.13")
+    venv.pip_install_and_link buildpath
   end
 
   test do
