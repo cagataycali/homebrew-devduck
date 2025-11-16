@@ -3,11 +3,11 @@ class Devduck < Formula
 
   desc "Extreme minimalist self-adapting AI agent"
   homepage "https://github.com/cagataycali/devduck"
-  url "https://files.pythonhosted.org/packages/source/d/devduck/devduck-0.5.0.tar.gz"
-  sha256 "1e71651087e2afe833ba89bf4e2d4a102f797a835b292d88b95f5078db2aae33"
+  url "https://files.pythonhosted.org/packages/source/d/devduck/devduck-0.5.2.tar.gz"
+  sha256 "bb43f99a0310da96b081ec187ef9412c3254c4fed48dc3e88578de6b31b6e570"
   license "Apache-2.0"
 
-  depends_on "python@3.11"
+  depends_on "python@3.13"
 
   resource "strands-agents" do
     url "https://files.pythonhosted.org/packages/e0/bd/160ad34c1b635ee534f0dd8de009097fff849101a847a0ae160b73f7aa41/strands_agents-1.16.0.tar.gz"
