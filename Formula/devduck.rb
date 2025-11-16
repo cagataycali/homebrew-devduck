@@ -11,7 +11,8 @@ class Devduck < Formula
 
   def install
     venv = virtualenv_create(libexec, "python3.13")
-    # Install directly from PyPI to get all dependencies
+    # Ensure pip is available
+    system libexec/"bin/python", "-m", "ensurepip", "--upgrade"
     system libexec/"bin/pip", "install", "--upgrade", "pip"
     system libexec/"bin/pip", "install", "devduck==0.5.2"
     bin.install_symlink libexec/"bin/devduck"
